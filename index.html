@@ -21,7 +21,7 @@
             --border-radius: 4px;
             --color: #999;
             --border-color: #999;
-            --border-color-hover: #666;
+            --border-color-hover: red;
         }
 
         #app {
@@ -35,9 +35,17 @@
 </head>
 <body>
 <div id="app">
-    <g-button icon="settings" icon-position="right">设置</g-button>
-    <g-button icon="settings" icon-position="left">设置</g-button>
-    <g-button icon="settings">设置</g-button>
+    <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">
+        设置
+    </g-button>
+    <g-button icon="settings" icon-position="left" :loading="true">设置</g-button>
+    <g-button icon="settings" :loading="true">设置</g-button>
+    <g-button-group>
+        <g-button icon="left">前进</g-button>
+        <g-button>更多</g-button>
+        <g-button icon="right" icon-position="right">后退</g-button>
+    </g-button-group>
+    <div id="test"></div>
 </div>
 <script src="./src/app.js"></script>
 <script src="//at.alicdn.com/t/font_1287530_m35t8dzmbm.js"></script>
