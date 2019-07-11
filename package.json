@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/sunchenlong111/allen-gulu#readme",
   "dependencies": {
-    "chai": "^4.2.0",
     "vue": "^2.6.10",
     "vue-hot-reload-api": "^2.3.3"
   },
