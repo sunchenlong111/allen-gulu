@@ -6,6 +6,7 @@
 <script>
     import './svg'
     export default {
+        name:'GuluIcon',
         props:{
             name:{
                 type:String,
@@ -14,6 +15,6 @@
         }
     }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .icon { width: 1em;height: 1em; }
 </style>
