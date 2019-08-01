@@ -32,55 +32,67 @@
             font-size: var(--font-size);
         }
 
-        .box{
+        .box {
             margin: 20px;
         }
     </style>
 </head>
 <body>
 <div id="app">
-    <g-row>
-        <g-col>1</g-col>
-        <g-col>2</g-col>
-    </g-row>
-    <g-row>
-        <g-col>1</g-col>
-        <g-col>2</g-col>
-        <g-col>3</g-col>
-    </g-row>
-    <g-row>
-        <g-col>1</g-col>
-        <g-col>2</g-col>
-        <g-col>3</g-col>
-        <g-col>4</g-col>
-    </g-row>
-    <g-row>
-        <g-col span="2">1</g-col>
-        <g-col span="22">11</g-col>
-    </g-row>
-    <g-row>
-        <g-col span="1">1</g-col>
-        <g-col span="23">23</g-col>
-    </g-row>
+    <div style="border:1px solid black;">
+        <g-row gutter="20">
+            <g-col>1</g-col>
+            <g-col>2</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col>1</g-col>
+            <g-col>2</g-col>
+            <g-col>3</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col>1</g-col>
+            <g-col>2</g-col>
+            <g-col>3</g-col>
+            <g-col>4</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col span="2">1</g-col>
+            <g-col span="20" offset="2">11</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col span="4">1</g-col>
+            <g-col span="20">11</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col span="4">1</g-col>
+            <g-col span="8" offset="2">11</g-col>
+            <g-col span="8" offset="2">11</g-col>
+        </g-row>
+        <g-row gutter="20">
+            <g-col span="4">1</g-col>
+            <g-col span="4" offset="6">12</g-col>
+            <g-col span="8" offset="2">11</g-col>
+        </g-row>
+    </div>
     <div class="box">
         <!--<g-input value="张三" disabled></g-input>-->
         <!--<g-input value="李四" readonly></g-input>-->
         <g-input value="王五" @change="inputChange"></g-input>
     </div>
     <!--<div class="box">-->
-        <!--<g-input value="王" error="姓名不能少于两个字"></g-input>-->
+    <!--<g-input value="王" error="姓名不能少于两个字"></g-input>-->
     <!--</div>-->
     <div class="box">
-    <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">
-        设置
-    </g-button>
-    <g-button icon="settings" icon-position="left" :loading="true">设置</g-button>
-    <g-button icon="settings" :loading="true">设置</g-button>
-    <g-button-group>
-        <g-button icon="left">前进</g-button>
-        <g-button>更多</g-button>
-        <g-button icon="right" icon-position="right">后退</g-button>
-    </g-button-group>
+        <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">
+            设置
+        </g-button>
+        <g-button icon="settings" icon-position="left" :loading="true">设置</g-button>
+        <g-button icon="settings" :loading="true">设置</g-button>
+        <g-button-group>
+            <g-button icon="left">前进</g-button>
+            <g-button>更多</g-button>
+            <g-button icon="right" icon-position="right">后退</g-button>
+        </g-button-group>
     </div>
     <div id="test"></div>
 </div>

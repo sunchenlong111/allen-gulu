@@ -1,6 +1,10 @@
 <template>
-    <div class="col" :class="[`col-${span}`]">
-        <slot></slot>
+    <div class="col" :class="[span&&`col-${span}`,offset&&`offset-${offset}`]"
+         :style="{paddingLeft: gutter/2+'px', paddingRight: gutter/2 + 'px'}"
+    >
+        <div style="border:1px solid green;height:100px;">
+            <slot></slot>
+        </div>
     </div>
 </template>
 
@@ -10,6 +14,14 @@
         props: {
             span: {
                 type: [String, Number]
+            },
+            offset: {
+                type: [String, Number]
+            }
+        },
+        data() {
+            return {
+                gutter: 0
             }
         }
     }
@@ -17,10 +29,7 @@
 
 <style lang="scss" scoped>
     .col {
-        height: 100px;
-        background: grey;
         width: 50%;
-        border: 1px solid red;
     }
 
     $class-prefix: col-;
@@ -29,4 +38,13 @@
             width: ($n/24) * 100%
         }
     }
+
+    $class-prefix: offset-;
+    @for $n from 1 through 24 {
+        .#{$class-prefix}#{$n} {
+            margin-left: ($n/24) * 100%;
+        }
+    }
+
+
 </style>
