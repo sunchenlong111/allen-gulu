@@ -1,12 +1,12 @@
 <template>
-    <div class="footer">
+    <div class="sider">
         <slot></slot>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'GuluFooter'
+        name: 'GuluSider'
     }
 </script>
 
