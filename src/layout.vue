@@ -30,6 +30,7 @@
         flex-grow:1;
         flex-direction: column;
         border:1px solid red;
+        overflow: hidden;
         &.hasSider{
             flex-direction: row;
         }

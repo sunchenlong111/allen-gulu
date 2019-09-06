@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="760229de-17ec-49f1-bd9a-40ce564809e9" name="默认的" comment="本地引入iconfont">
-      <change afterPath="$PROJECT_DIR$/src/sider.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/content.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/header.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sider.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +67,7 @@
       <workItem from="1564018849016" duration="12324000" />
       <workItem from="1564564398262" duration="505000" />
       <workItem from="1567583619930" duration="2714000" />
-      <workItem from="1567587119283" duration="8242000" />
+      <workItem from="1567587119283" duration="11549000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1562724790733</created>
